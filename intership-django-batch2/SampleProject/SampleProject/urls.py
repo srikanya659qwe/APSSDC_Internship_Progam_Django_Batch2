@@ -22,6 +22,17 @@ urlpatterns = [
     path('sample/',views.sam),
 
     path('dyn/<int:id>/',views.dynamic,name='dyn'),
-    path('data/<str:name>/',views.data)
+    path('data/<str:name>/',views.data),
+    path('task/<int:a>/<str:b>/',views.task,name='task'),
+
+    path('temp/',views.temp,name='temp'),
+    path('table/',views.table,name='table'),
+    path('details/<int:id>/<str:name>/',views.det,name='details'),
+
+    path('inline/',views.inline,name='inline'),
+    path('internal/',views.internal,name='internal'),
+    path('external/',views.external,name='external'),
+
+    path('boot/',views.boot,name='boot')
 
 ]
